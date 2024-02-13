@@ -1,0 +1,61 @@
+package HGEPackage;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vcl,
+  vclimg;
+
+contains
+  HGE in 'HGE.pas',
+  HGEBase in 'HGEBase.pas',
+  HGECanvas in 'HGECanvas.pas',
+  HGEGUI in 'HGEGUI.pas',
+  HGETextures in 'HGETextures.pas',
+  HGESounds in 'HGESounds.pas',
+  WilPion in 'WilPion.pas',
+  DirectXWave in 'Sound\DirectXWave.pas',
+  DirectXSound in 'Sound\DirectXSound.pas',
+  DirectXTypes in 'Sound\DirectXTypes.pas',
+  Gfxfont in 'Gfxfont.pas',
+  WIL in 'WIL\WIL.pas',
+  wmM2Def in 'WIL\wmM2Def.pas',
+  wmM3Def in 'WIL\wmM3Def.pas',
+  wm521g in 'WIL\wm521g.pas',
+  wmM2Wis in 'WIL\wmM2Wis.pas',
+  wmM2Zip in 'WIL\wmM2Zip.pas',
+  wmM3Zip in 'WIL\wmM3Zip.pas',
+  wmMyImage in 'WIL\wmMyImage.pas',
+  HGEFont in 'HGEFont.pas',
+  HGEFonts in 'HGEFonts.pas',
+  HGERect in 'HGERect.pas',
+  HGESprite in 'HGESprite.pas',
+  HGEUtils in 'HGEUtils.pas',
+  DirectXGraphics in 'DirectX\DirectXGraphics.pas';
+
+end.
